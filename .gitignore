@@ -1,5 +1,4 @@
-ext-lsp
-tmp
-syntax
+htms-lsp/syntaxes/source.htms
+htms-lsp/ext
+htms-lsp/tmp
 .DS_Store
-ihtml-language-support/syntaxes/source.ihtml

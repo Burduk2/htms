@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "IHTML",
+    "name": "HTMS",
     "patterns": [
         { "include": "#attr-sections"},
         { "include": "#tags" },
@@ -9,40 +9,40 @@
     "repository": {
         "comments": {
             "patterns": [{
-                "name": "comment.line.ihtml",
+                "name": "comment.line.htms",
                 "match": "@--.*$"
             }]
         },
         "tags": {
             "patterns": [{
-                "name": "variable.name.ihtml",
+                "name": "variable.name.htms",
                 "match": "^\\s*@[a-z0-9_-]+\\b"
             }]
         },
         "attr-sections": {
-            "name": "variable.name.ihtml",
+            "name": "variable.name.htms",
             "begin": "^\\s*@[a-z0-9_-]+\\[",
             "end": "\\]",
             "patterns": [
                 {
-                    "name": "entity.other.attribute-name.ihtml",
+                    "name": "entity.other.attribute-name.htms",
                     "match": "\\b[a-z0-9_-]+\\b"
                 },
                 {
-                    "name": "keyword.operator.ihtml",
+                    "name": "keyword.operator.htms",
                     "match": "="
                 },
                 {
-                    "name": "string.quoted.double.ihtml",
+                    "name": "string.quoted.double.htms",
                     "begin": "\"",
                     "end": "\"",
                     "patterns": [{
-                        "name": "constant.character.escape.ihtml",
+                        "name": "constant.character.escape.htms",
                         "match": "\\\\."
                     }]
                 }
             ]
         }
     },
-    "scopeName": "source.ihtml"
+    "scopeName": "source.htms"
 }

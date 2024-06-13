@@ -1,0 +1,27 @@
+{
+  "name": "htms-language-support",
+  "displayName": "HTMS Language Support",
+  "publisher": "ua2",
+  "repository": "https://github.com/Burduk2/htms",
+  "description": "Syntax highlighting and other features for HTMS language",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "htms",
+      "aliases": ["HTMS", "htms"],
+      "extensions": [".htms"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "htms",
+      "scopeName": "source.htms",
+      "path": "./syntaxes/htms.tmLanguage.json"
+    }]
+  }
+}
