@@ -1,0 +1,48 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "IHTML",
+    "patterns": [
+        { "include": "#attr-sections"},
+        { "include": "#tags" },
+        { "include": "#comments" }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [{
+                "name": "comment.line.ihtml",
+                "match": "@--.*$"
+            }]
+        },
+        "tags": {
+            "patterns": [{
+                "name": "variable.name.ihtml",
+                "match": "^\\s*@[a-z0-9_-]+\\b"
+            }]
+        },
+        "attr-sections": {
+            "name": "variable.name.ihtml",
+            "begin": "^\\s*@[a-z0-9_-]+\\[",
+            "end": "\\]",
+            "patterns": [
+                {
+                    "name": "entity.other.attribute-name.ihtml",
+                    "match": "\\b[a-z0-9_-]+\\b"
+                },
+                {
+                    "name": "keyword.operator.ihtml",
+                    "match": "="
+                },
+                {
+                    "name": "string.quoted.double.ihtml",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [{
+                        "name": "constant.character.escape.ihtml",
+                        "match": "\\\\."
+                    }]
+                }
+            ]
+        }
+    },
+    "scopeName": "source.ihtml"
+}
