@@ -3,14 +3,11 @@
         @meta[charset="UTF-8"] 
     @body
         @h1[class="title" role="heading"] Hello World!
+        @p 
             Lorem ipsum dolor
             sit amet. 
         @h2
-            Something cuper 
+            Lorem ipsum 
             @span highlighted
-            and very gut.
-
-
-@-- attr str works with anything but # at the start
-@sometag[a="asd" asd=""]
+            dolor sit amet.
 
