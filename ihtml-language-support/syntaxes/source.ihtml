@@ -2,7 +2,7 @@
     @head
         @meta[charset="UTF-8"] 
     @body
-        @h1[class="title" role="heading"] Hello World!
+        @h1[(class="title" role="heading")] Hello World!
         @p 
             Lorem ipsum dolor
             sit amet. 

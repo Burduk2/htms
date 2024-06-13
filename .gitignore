@@ -2,3 +2,4 @@ ext-lsp
 tmp
 syntax
 .DS_Store
+ihtml-language-support/syntaxes/source.ihtml
